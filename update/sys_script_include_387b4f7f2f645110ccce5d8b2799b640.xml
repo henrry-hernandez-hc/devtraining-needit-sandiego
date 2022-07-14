@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.generateUserIDfromSI</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Adding Generate "UserID"</description>
+        <name>generateUserIDfromSI</name>
+        <script><![CDATA[function generateUserIDfromSI(current, previous /*null when async*/) {
+
+	current.user_name = current.first_name.substr(0,1) + current.last_name;
+
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 18:55:39</sys_created_on>
+        <sys_id>387b4f7f2f645110ccce5d8b2799b640</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>generateUserIDfromSI</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_387b4f7f2f645110ccce5d8b2799b640</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 19:22:44</sys_updated_on>
+    </sys_script_include>
+</record_update>
